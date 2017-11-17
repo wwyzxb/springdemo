@@ -4,11 +4,21 @@
     <title>欢迎登录</title>
 </head>
 <body>
-<form action="login">
-    用户名：<input id="username" name="username" type="text"></br>
-    密码：<input id="password" name="password" type="password"></br>
-    <input type="submit">
+<form action="/login">
+    <table>
+        <tr>
+            <td>用户名：</td>
+            <td><input id="username" name="username" type="text"></td>
+
+        </tr>
+        <tr>
+            <td>密码：</td>
+            <td><input id="password" name="password" type="password"></td>
+        </tr>
+        <tr>
+            <td><input type="submit"></td>
+        </tr>
+    </table>
 </form>
-<span>当前ip:<%= request.getRemoteAddr()%></span>
 </body>
 </html>
