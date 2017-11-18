@@ -9,7 +9,7 @@
             <!--jdbc数据库的连接地址-->
             <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/study"/>
             <property name="hibernate.connection.username" value="root"/>
-            <property name="hibernate.connection.password" value="vincent"/>
+            <property name="hibernate.connection.password" value="123456"/>
             <!--配置方言-->
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
             <!--激活查询日志功能-->

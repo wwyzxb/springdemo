@@ -4,7 +4,7 @@
     <title>欢迎登录</title>
 </head>
 <body>
-<form action="/login">
+<form action="/login" method="post">
     <table>
         <tr>
             <td>用户名：</td>
