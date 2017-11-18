@@ -6,6 +6,6 @@
     <title>欢迎</title>
 </head>
 <body>
-<h1>欢迎您:${account.username}</h1>
+<h1>欢迎您:${info}</h1>
 </body>
 </html>

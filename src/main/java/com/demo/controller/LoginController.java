@@ -2,6 +2,7 @@ package com.demo.controller;
 
 import com.demo.model.Account;
 import com.demo.service.AccountService;
+import com.demo.utils.Result;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,7 +28,7 @@ public class LoginController {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         Account account = accountService.getAccount(username, password);
-        model.addAttribute("account", account);
+        model.addAttribute("info", Result.returnSuccessResult(account));
         return "welcome";
     }
 }
