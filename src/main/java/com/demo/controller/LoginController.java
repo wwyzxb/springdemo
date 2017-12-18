@@ -3,6 +3,7 @@ package com.demo.controller;
 import com.demo.model.Account;
 import com.demo.service.AccountService;
 import com.demo.utils.Result;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,7 @@ import javax.servlet.http.HttpServletRequest;
  * @Date 2017/11/17
  **/
 @Controller
+@Slf4j
 public class LoginController {
     private Logger logger = LoggerFactory.getLogger(LoginController.class);
     @Autowired
